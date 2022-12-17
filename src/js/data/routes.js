@@ -1,13 +1,14 @@
 import HomePage from "../../vue/components/HomePage.vue";
-import NFTsPage from "../../vue/components/NFTsPage.vue";
-import RentedNFTsPage from "../../vue/components/RentedNFTsPage.vue";
 import NotFoundPage from "../../vue/components/NotFoundPage.vue";
+import AssistantLoginPage from "../../vue/components/AssistantLoginPage.vue";
 
 const routes = [
     { path: "", component: HomePage },
-    { path: "/my-nfts", component: NFTsPage },
-    { path: "/rented-nfts", component: RentedNFTsPage },
-    { path: "/:catchAll(.*)", component: NotFoundPage },
+    { path: "/assistente", component: HomePage },
+    { path: "/assistente/login", component: AssistantLoginPage },
+    { path: "/virtap-webapp/assistente", component: HomePage },
+    { path: "/virtap-webapp/assistente/login", component: AssistantLoginPage },
+    { path: "/:catchAll(.*)", component: NotFoundPage }
 ];
 
 export default routes;

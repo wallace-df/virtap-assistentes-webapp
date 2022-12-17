@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import NFT from "../../js/services/nft.js"
+import NFT from "../../js/services/projects.js"
 
 const $ = window["$"];
 

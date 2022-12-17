@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import NFT from "../../js/services/nft.js"
+import NFT from "../../js/services/projects.js"
 import NumberUtils from "../../js/utils/number.js";
 
 const $ = window["$"];

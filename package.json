@@ -7,18 +7,9 @@
     "build": "vue-cli-service build --skip-plugins @vue/cli-plugin-eslint"
   },
   "dependencies": {
-    "@argent/get-starknet": "^3.6.2",
-    "ethers": "^5.6.4",
-    "ipfs-car": "^0.6.2",
-    "mime": "^3.0.0",
-    "nft.storage": "^6.1.0",
-    "promise-mysql": "^5.2.0",
-    "starknet": "^3.9.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.15",
-    "vuex": "^4.0.2",
-    "web3": "^1.7.0",
-    "zksync-web3": "^0.4.0"
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -32,3 +23,4 @@
     "not dead"
   ]
 }
+ 
