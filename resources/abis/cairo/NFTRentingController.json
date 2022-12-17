@@ -1,0 +1,141 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "nftCollectionAddress",
+                "type": "felt"
+            },
+            {
+                "name": "nftTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "ownerAddress",
+                "type": "felt"
+            },
+            {
+                "name": "hourlyRate",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "ItemListed",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "nftCollectionAddress",
+                "type": "felt"
+            },
+            {
+                "name": "nftTokenId",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "ItemUnlisted",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "nftCollectionAddress",
+                "type": "felt"
+            },
+            {
+                "name": "nftTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "userAddress",
+                "type": "felt"
+            },
+            {
+                "name": "amount",
+                "type": "Uint256"
+            },
+            {
+                "name": "expires",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "ItemRent",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_nftCllectionAddress",
+                "type": "felt"
+            },
+            {
+                "name": "_nftTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "_hourlyRate",
+                "type": "Uint256"
+            }
+        ],
+        "name": "listItem",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_nftCollectionAddress",
+                "type": "felt"
+            },
+            {
+                "name": "_nftTokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "unlistItem",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_nftCollectionAddress",
+                "type": "felt"
+            },
+            {
+                "name": "_nftTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "_hours",
+                "type": "felt"
+            },
+            {
+                "name": "_amount",
+                "type": "Uint256"
+            }
+        ],
+        "name": "rentItem",
+        "outputs": [],
+        "type": "function"
+    }
+]
