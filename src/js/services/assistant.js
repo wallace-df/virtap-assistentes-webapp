@@ -15,7 +15,6 @@ export default {
     let response = await fetch(url, { credentials: "include" });
     if (response.status === 200) {
       let responseObject = await response.json();
-      console.log(responseObject);
       if (responseObject.errorCode) {
         throw responseObject;
       }
@@ -23,6 +22,31 @@ export default {
     } else {
       throw response;
     }
+  },
 
+  async registerAssistant(assistantDetails) {
+    let url = `${Config.apiHost}/assistente/signup`;
+    let formData = new FormData();
+    let pictureFile = assistantDetails.picture;
+
+    delete assistantDetails['picture'];
+    formData.append('assistantDetails', JSON.stringify(assistantDetails));
+    formData.append('pictureFile', pictureFile);
+
+    let response = await fetch(url, {
+        method: "POST",
+        body: formData,
+        credentials: "include"
+    });
+
+    if (response.status === 200) {
+      let responseObject = await response.json();
+      if (responseObject.errorCode) {
+        throw responseObject;
+      }
+      return responseObject.responseData;
+    } else {
+      throw response;
+    }
   }
 }

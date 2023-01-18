@@ -6,19 +6,19 @@
 }
 
 html, #app {
-    background: #141414;
+    /* background: #141414; */
 }
 
 #app {
-    color: #fff;
+    color: #333;
 }
 
 body {
-    background: #120c18;    
+    /* background: #120c18;     */
 }
 
 .navbar {
-    background: #120c18;
+    background: teal;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -97,6 +97,10 @@ body {
     border-radius: 4px;
     background: #fff;
     color: #000;
+}
+
+.form-group {
+    color: #333;
 }
 
 .button:hover {
@@ -239,7 +243,7 @@ body {
 
 .main__content h1 {
     font-size: 3.5rem;
-    color: #fff;
+    color: #333;
 }
 
 .text-highlight {
@@ -468,9 +472,6 @@ body {
     background: rgba(99, 99, 99, 0.5);
 }
 
-.form-control:disabled {
-    background-color: #aaa !important;
-}
 
 img.disabled {
     cursor: default !important;

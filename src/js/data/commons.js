@@ -1,5 +1,6 @@
 import NumberUtils from "../utils/number.js";
 import TimeUtils from "../utils/time.js";
+import Config from "../../../resources/config.js";
 
 const $ = window["$"];
 
@@ -13,6 +14,10 @@ export default {
             let formattedPrice = NumberUtils.formatUnit(price.toString(), 18);
             return formattedPrice.substring(0, formattedPrice.length - 10) + " ETH";
         },
+
+        getImageURL(file) {
+            return `${Config.imageHost}/get?file=${file}`;
+         },
 
         formatDuration(loanDurationInSeconds) {
             return TimeUtils.formatDuration(loanDurationInSeconds);
